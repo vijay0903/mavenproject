@@ -15,5 +15,6 @@ http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/cu
         <db:select config-ref="MySQL_Configuration" doc:name="Database">
             <db:parameterized-query><![CDATA[select * from american]]></db:parameterized-query>
         </db:select>
+        <logger level="INFO" doc:name="Logger"/>
     </flow>
 </mule>
